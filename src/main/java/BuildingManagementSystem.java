@@ -1,8 +1,13 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 public class BuildingManagementSystem {
 	private List<Building> buildings;
+
+	public BuildingManagementSystem() {
+		this.buildings = new ArrayList<>();
+	}
 
 	public List<Building> getBuildings() {
 		return List.copyOf(this.buildings);
