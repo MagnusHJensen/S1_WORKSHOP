@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class Actuator extends Unit {
@@ -13,6 +15,7 @@ public class Actuator extends Unit {
 
 	public void setValue(double value) {
 		this.value = value;
+		BuildingManagementSystem.DATA_MANAGER.saveActuatorValue(this);
 	}
 
 	public double getValue() {
