@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class TemperatureSensor extends Sensor {
@@ -17,6 +19,6 @@ public class TemperatureSensor extends Sensor {
 
 	@Override
 	public String toString() {
-		return "TemperatureSensor{name = " + getName() + " value = " + getValue() + "}";
+		return "domain.TemperatureSensor{name = " + getName() + " value = " + getValue() + "}";
 	}
 }

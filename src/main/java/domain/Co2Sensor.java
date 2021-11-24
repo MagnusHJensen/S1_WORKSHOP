@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class Co2Sensor extends Sensor{
@@ -17,6 +19,6 @@ public class Co2Sensor extends Sensor{
 
 	@Override
 	public String toString() {
-		return "Co2Sensor{name = " + getName() + " value = " + getValue() + "}";
+		return "domain.Co2Sensor{name = " + getName() + " value = " + getValue() + "}";
 	}
 }

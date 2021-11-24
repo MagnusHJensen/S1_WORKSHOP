@@ -1,7 +1,13 @@
+package domain;
+
+import data.DataStorageManager;
+import data.IDataManager;
+
 import java.util.*;
 
 public class BuildingManagementSystem implements IBuildingManagementSystem {
 	private List<Building> buildings;
+	public static final IDataManager DATA_MANAGER = new DataStorageManager();
 
 	public BuildingManagementSystem() {
 		this.buildings = new ArrayList<>();

@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class Unit {
@@ -25,6 +27,6 @@ public class Unit {
 
 	@Override
 	public String toString() {
-		return "Unit : " + this.name + " , " + this.id + ".";
+		return "domain.Unit : " + this.name + " , " + this.id + ".";
 	}
 }

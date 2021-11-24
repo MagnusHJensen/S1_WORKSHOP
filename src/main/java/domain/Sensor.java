@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class Sensor extends Unit {
@@ -11,6 +13,9 @@ public class Sensor extends Unit {
 	}
 
 	public double getValue() {
-		return Math.random();
+		double value = Math.random();
+		BuildingManagementSystem.DATA_MANAGER.saveSensorValue(this);
+		return value;
+
 	}
 }

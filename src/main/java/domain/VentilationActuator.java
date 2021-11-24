@@ -1,3 +1,5 @@
+package domain;
+
 import java.util.UUID;
 
 public class VentilationActuator extends Actuator {
@@ -17,6 +19,6 @@ public class VentilationActuator extends Actuator {
 
 	@Override
 	public String toString() {
-		return "VentilationActuator{value = " + getValue() + "}";
+		return "domain.VentilationActuator{value = " + getValue() + "}";
 	}
 }

@@ -1,4 +1,4 @@
-/*
+package domain;/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -18,13 +18,13 @@ public interface IBuildingManagementSystem {
 	public Map<UUID, String> getBuildingInformation();
 
 	/**
-	 * @param buildingId Building from which sensors are acquired
+	 * @param buildingId domain.Building from which sensors are acquired
 	 * @return Map containing UUIDs of all sensors in building with buildingId, along with associated description of each sensor (i.e. name)
 	 */
 	public Map<UUID, String> getSensorInformation(UUID buildingId);
 
 	/**
-	 * @param buildingId Building from which sensors are acquired
+	 * @param buildingId domain.Building from which sensors are acquired
 	 * @return Map containing UUIDs of all actuators in building with buildingId, along with associated description of each actuator (i.e. name)
 	 */
 	public Map<UUID, String> getActuatorInformation(UUID buildingId);
